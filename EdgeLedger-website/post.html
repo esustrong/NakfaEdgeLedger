@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Post one</title>
+</head>
+<!-- navbar -->
+
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo"><span class="text-primary"><i class="fas fa-book-open"></i>Nakfa</span> EdgheLedger</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="content">
+      <h1>Blog</h1>
+    </div>
+
+
+  </header>
+
+  <main>
+    <section class="post">
+      <h2>Blog Post One</h2>
+      <p class="meta">
+        <i class="fas fa-user"></i> Posted by <strong>Issayas Ghebru </strong>|
+        may 24 2021
+      </p>
+      <img src="./Images/blog:post.jpg" alt="">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente expedita commodi quia voluptatibus cumque
+        quo voluptates delectus laboriosam quas dignissimos!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere culpa saepe et, dignissimos earum pariatur
+        voluptate eligendi! Mollitia culpa, ad blanditiis maiores soluta corporis praesentium! Facere facilis aspernatur
+        odit architecto quo minus suscipit, quae dolore quidem, dolorum eum quas ducimus asperiores distinctio, ab saepe
+        aut neque incidunt eaque eveniet illo id. Eveniet voluptates amet voluptas fugit eius corrupti exercitationem
+        consectetur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non molestias quisquam quae eveniet eum minima,
+        accusamus, itaque necessitatibus ab delectus, doloremque blanditiis id praesentium? Hic eius aspernatur
+        consectetur beatae aut asperiores non porro atque et facilis. Tenetur exercitationem ducimus quos laboriosam.
+        Maiores dignissimos nesciunt ullam sapiente? Enim voluptatum ipsa sequi.</p>
+
+
+    </section>
+
+  </main>
+  <!-- footer -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+      <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+      <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+      <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2021 - Edgeledger All Rights Reserved</p>
+  </footer>
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classlist.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classlist.add('top');
+        scrolled = false;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
